@@ -36,12 +36,11 @@ a {
 }
 
 /*-----------------Header part CSS start here---------------------------*/
-
-.header {
+.header{
     position: relative;
 }
-
-.header h2>a {
+/*---page main heading SHOP---*/
+.main-heading {
     font-size: medium;
     font-weight: 800;
     margin-top: 1.4em;
@@ -106,21 +105,21 @@ a {
 /*giving background to mens wear*/
 
 .mens-pic {
-    background-image: url('/home/dev/shopping-mania/image/mens_outerwear.jpg');
+    background-image: url('image/mens_outerwear.jpg');
 }
 
 /*giving background to ladies wear*/
 
 .lady-pic {
-    background-image: url('/home/dev/shopping-mania/image/ladies_outerwear.jpg');
+    background-image: url('image/ladies_outerwear.jpg');
 }
 
 .mens-tshirt-pic {
-    background-image: url('/home/dev/shopping-mania/image/mens_tshirts.jpg');
+    background-image: url('image/mens_tshirts.jpg');
 }
 
 .ladies-tshirt-pic {
-    background-image: url('/home/dev/shopping-mania/image/ladies_tshirts.jpg');
+    background-image: url('image/ladies_tshirts.jpg');
 }
 
 /*-----------footer-------------*/
@@ -156,5 +155,13 @@ a {
 @media only screen and (min-width: 768px) {
     .item-container {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media only screen and (max-width:767px){
+    #no-profile{
+        display: none;
+    }
+    .nav-container{
+        display: none;
     }
 }
