@@ -157,4 +157,13 @@ a {
     .item-container {
         grid-template-columns: repeat(3, 1fr);
     }
+    #profile{
+        height: 319px;
+    }
+    
+}
+@media only screen and (max-width: 768px){
+#profile{
+    display: none;
+ }
 }
