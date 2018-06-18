@@ -1,82 +1,4 @@
-/*---------giving font family for whole document----------*/
 
-body {
-    margin: 0px;
-}
-
-* {
-    font-family: sans-serif;
-    text-align: center;
-    font-weight: 400;
-}
-
-div {
-    margin-bottom: 1.1em;
-}
-
-/*Removing underline from all anchor tag*/
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-/*------shop now button-------*/
-
-.shop-btn>a {
-    font-size: 15px;
-    padding: 10px 35px;
-    display: inline-block;
-    border: 2px solid black;
-}
-
-.shop-btn>a:active {
-    background-color: black;
-    color: white;
-}
-
-/*-----------------Header part CSS start here---------------------------*/
-.header{
-    position: relative;
-}
-/*---page main heading SHOP---*/
-.main-heading {
-    font-size: medium;
-    font-weight: 800;
-    margin-top: 1.4em;
-}
-
-/*-----giving css to navbar-----*/
-
-.nav-container {
-    display: flex;
-    justify-content: center;
-}
-
-.nav-container>div {
-    margin: 0px;
-}
-
-.nav-container a {
-    color: black;
-    font-size: small;
-    margin-right: 30px;
-}
-
-.nav-container a:active {
-    background-color: black;
-    opacity: 0.5;
-    border-bottom: 1px solid black;
-}
-
-/*----Css for cart icon-----*/
-
-.cart-icon {
-    position: absolute;
-    width: 20px;
-    top: 0;
-    right: 25px;
-}
 
 /*-----CSS for home itmes-----*/
 
@@ -93,6 +15,111 @@ a {
     grid-column: 1/3;
 }
 
+/*------add to cart page-----*/
+
+.addtocart {
+    display: flex;
+    justify-content: center;
+}
+
+.addtocart img {
+    width: 600px;
+    max-width: 100%;
+}
+
+.select-box {
+    width: 100%;
+    appearance: none;
+    padding: 10px 24px;
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 1em;
+    font-weight: 300;
+    border-bottom: 1px solid rgb(187, 187, 187);
+    border-top: 1px solid rgb(187, 187, 187);
+    margin: 0;
+}
+
+.details {
+    margin: 64px 32px;
+    width: 50%;
+    max-width: 400px;
+}
+
+.textsize {
+    font-size: 13px;
+}
+
+/*--------checkout page--------*/
+
+.checkout-details {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    margin: 40px 0px;
+    justify-items: center;
+    align-items: center;
+}
+
+.checkout-details div {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.checkout-top {
+    margin-top: 82px;
+}
+
+.cross-icon {
+    width: 10px;
+    height: 10px;
+}
+
+.text-wrapper {
+    display: inline-block;
+    max-width: 100%;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.checkout-img {
+    width: 75px;
+    height: 90px;
+}
+
+.align-text-right {
+    text-align: right;
+    margin-right: 25%;
+}
+
+/*------place-order-------*/
+
+.form-align {
+    padding: 0px 20px 20px 20px;
+}
+
+.display-inline {
+    display: inline;
+}
+.select-box2{
+    width: 100%;
+    appearance: none;
+    padding: 10px 24px;
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 1em;
+    font-weight: 300;
+    border-bottom: 1px solid rgb(187, 187, 187);
+    margin: 0;
+}
+input{
+    border:none;
+    border-bottom: 1px solid grey;
+    width: 100%;
+}
 /*------giving css to profile pic ------*/
 
 .profile-pic {
@@ -150,30 +177,3 @@ a {
     max-width: 100%;
 }
 
-/*------responsive queries------*/
-
-@media only screen and (min-width: 768px) {
-    .item-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-<<<<<<< HEAD
-    #profile{
-        height: 319px;
-    }
-    
-}
-@media only screen and (max-width: 768px){
-#profile{
-    display: none;
- }
-=======
-}
-@media only screen and (max-width:767px){
-    #no-profile{
-        display: none;
-    }
-    .nav-container{
-        display: none;
-    }
->>>>>>> 09ab4ae15cedc91fb9e028cd1673d13189da288e
-}

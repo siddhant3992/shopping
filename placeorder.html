@@ -6,73 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="common-style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <p>Checkout</p>
-    <p>Shop is a demo app - form data will not be sent</p>
-    </div>
-    <form>
+    <!--header part with navbar-->
+    <div class="header align-text-center">
         <div>
-            <p>Account Information</p>
+            <h1>
+                <a href="index.html" class="main-heading">S H O P</a>
+            </h1>
+            <a href="#">
+                <img src="image/cart.svg" alt="cart" class="cart-icon">
+            </a>
+        </div>
+    </div>
+    <p class="align-text-center">Checkout</p>
+    <p class="align-text-center textsize highlight-txt">Shop is a demo app - form data will not be sent</p>
+    </div>
+    <form class="form-align">
+        <div>
+            <p class="sub-headings">Account Information</p>
             <div>
-                <label>Email</label>
-                <input name="email" type="text" />
+                <input name="email" type="text" placeholder="Email" />
             </div>
             <div>
-                <label>Phone Number</label>
-                <input name="phone" type="text" />
+                <input name="phone" type="text" placeholder="Phone Number" />
             </div>
         </div>
         <div>
-            <p>Account Information</p>
+            <p>Shipping Address</p>
             <div>
-                <label>Address</label>
-                <input name="address" type="text" />
+                <input name="address" type="text" placeholder="Address" />
             </div>
             <div>
-                <label>City</label>
-                <input name="city" type="text" />
+                <input name="city" type="text" placeholder="City" />
             </div>
             <div>
-                <label>State/Province</label>
-                <input name="state" type="text" />
+                <input name="state" type="text" placeholder="State/Province" />
             </div>
             <div>
-                <label>Zip/Postal Code</label>
-                <input name="postal" type="text" />
+                <input name="postal" type="text" placeholder="Zip/Postal Code" />
             </div>
             <div>
                 <label>Country</label>
-                <select>
+                <select class="select-box2">
                     <option>United States</option>
                     <option>Canada</option>
                 </select>
             </div>
         </div>
         <div>
+            <p class="sub-headings">Billing Address</p>
             <input name="address-same" type="checkbox" value="same" /> Use different billing address
             <div>
                 <div>
-                    <label>Address</label>
-                    <input name="address" type="text" />
+                    <input name="address" type="text" placeholder="Address" />
                 </div>
                 <div>
-                    <label>City</label>
-                    <input name="city" type="text" />
+                    <input name="city" type="text" placeholder="City" />
                 </div>
                 <div>
-                    <label>State/Province</label>
-                    <input name="state" type="text" />
+                    <input name="state" type="text" placeholder="State/Province" />
                 </div>
                 <div>
-                    <label>Zip/Postal Code</label>
-                    <input name="postal" type="text" />
+                    <input name="postal" type="text" placeholder="Zip/Postal Code" />
                 </div>
                 <div>
                     <label>Country</label>
-                    <select>
+                    <select class="select-box2">
                         <option>United States</option>
                         <option>Canada</option>
                     </select>
@@ -80,55 +83,50 @@
             </div>
         </div>
         <div>
-            <p>Payment Method</p>
+            <p class="sub-headings">Payment Method</p>
             <div>
-                <label>Cardholder Name</label>
-                <input name="name-on-card" type="text" />
+                <input name="name-on-card" type="text" placeholder="Cardholder Name" />
             </div>
             <div>
-                <label>Card Number</label>
-                <input name="card-number" type="text" />
+                <input name="card-number" type="text" placeholder="Card Number" />
             </div>
-            <div>
-                <label>Expiry</label>
-                <select>
-                    <option>Jan</option>
-                    <option>Feb</option>
-                    <option>March</option>
-                </select>
-            </div>
-            <div>
-                <select>
-                    <option>2018</option>
-                    <option>2019</option>
-                    <option>2020</option>
-                </select>
-            </div>
-            <div>
-                <label>CVV</label>
-                <input name="cvv" type="text" />
+            <label>Expiry</label>
+            <div class="expiry-flex">
+                <div class="display-inline">
+                    <select class="select-box2">
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>March</option>
+                    </select>
+                </div>
+                <div class="display-inline">
+                    <select class="select-box2">
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                    </select>
+                </div>
+                <div class="display-inline">
+                    <input name="cvv" type="text" placeholder="CVV" />
+                </div>
             </div>
         </div>
         <div>
-            <div>
-                <p>Adult Android Superhero T-Shirt</p>
-                <p>$14.95</p>
-            </div>
+            <p class="sub-headings">Order Summary</p>
             <div>
                 <p>Adult Android Superhero T-Shirt</p>
                 <p>$14.95</p>
             </div>
             <div>
                 <p>Total</p>
-                <p>$60.45</p>
+                <p>$14.95</p>
             </div>
-            <div>
-                <button>PLACE ORDER</button>
+            <div class="shop-btn add-btn">
+                <a href="#">PLACE ORDER</a>
             </div>
         </div>
     </form>
-    <p>The Rubik's Cube is the most popular puzzle toy. Read the
-        <a href="https://ruwix.com/the-rubiks-cube/how-to-solve-the-rubiks-cube-beginners-method/">beginner's solution guide</a> to learn how to solve it easily.</p>
+
 </body>
 
 </html>

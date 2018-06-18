@@ -4,41 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="common-style.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 
 <body>
-    <div>
-        <h3>Your Cart</h3>
-        <h4>(# item)</h4>
-    </div>
-    <div>
-        <img src="images/mens2.jpg" alt="" />
-        <p>Men's Tech Shell Full-Zip</p>
+    <!--header part with navbar-->
+    <div class="header align-text-center">
         <div>
-            <div>Qty:
-                <select name="">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-            <div>Size:&emsp;M</div>
-            <div>$50.20</div>
-            <div>
-                <img src="images/cross-symbol.png" alt="" />
-            </div>
+            <h1>
+                <a href="index.html" class="main-heading">S H O P</a>
+            </h1>
+            <a href="#">
+                <img src="image/cart.svg" alt="cart" class="cart-icon">
+            </a>
         </div>
     </div>
-    <div>
-        <p>Total:</p>
-        <p>$50.20</p>
-        <a href="placeorder.html">
-            <button>CHECKOUT</button>
-        </a>
+    <div class="align-text-center checkout-top">
+        <h3>Your Cart</h3>
+        <h4 class="textsize highlight-txt">(1 item)</h4>
+    </div>
+
+    <div class="checkout-details">
+        <div>
+            <img src="menstshirt/2.jpg" class="checkout-img" alt="" />
+        </div>
+
+        <p class="text-wrapper textsize">Men's Tech Shell Full-Zip</p>
+
+        <div>
+            <span class="highlight-txt textsize">Qty:</span>
+            <select name="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div>
+            <h5 class="highlight-txt">Size:&emsp;M</h5>
+        </div>
+        <div>
+            <h5 class="highlight-txt">$50.20</h5>
+        </div>
+        <div>
+            <img src="image/cross.png" alt="" class="cross-icon" />
+        </div>
+
+    </div>
+    <div class="align-text-right">
+        <h5 class="highlight-txt">Total:</h5>
+        <h5 class="highlight-txt">$50.20</h5>
+        <div class="add-btn shop-btn"><a href="placeorder.html">CHECKOUT</a></div>
     </div>
 
 </body>

@@ -1,54 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="style.css">
-    <title>Document</title>
+	<link rel="stylesheet" href="common-style.css">
+	<title>Document</title>
 </head>
+
 <body>
-    <div>
+	<!--header part with navbar-->
+	<div class="header align-text-center">
 		<div>
-			<img/>
+			<h1>
+				<a href="index.html" class="main-heading">S H O P</a>
+			</h1>
+			<a href="#">
+				<img src="image/cart.svg" alt="cart" class="cart-icon">
+			</a>
 		</div>
-		<div>
+		<div class="nav-container">
 			<div>
-				<h2>Green Flex Fleece Zip Hoodie</h2>
-				<p>&#36;45.65</p>
+				<a href="mens-outwear.html">Men's Outerwear</a>
 			</div>
 			<div>
-				<select>
-					<option>XS</option>
-					<option>S</option>
-					<option>M</option>
-					<option>L</option>
-					<option>XL</option>
-				</select>
-				<select>
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
-				</select>
+				<a href="mens-outwear.html">Ladies Outerwear</a>
 			</div>
 			<div>
-				<p>Description</p>
-				<p>Ultra soft. Ultra cozy. Our popular flex fleece hoodie now available in speckled green.</p>
+				<a href="mens-outwear.html">Men's T-Shirts</a>
+			</div>
+			<div>
+				<a href="mens-outwear.html">Ladies T-Shirts</a>
+			</div>
+		</div>
+	</div>
+	<div class="addtocart">
+		<div class="align-text-center">
+			<img src="/menstshirt/3.jpg" />
+		</div>
+		<div class="details">
+			<div class="details-padding">
 				<div>
-					<p>Features:</p>
-					<ul>
-						<li>50% cotton / 50% polyester.</li>
-						<li>Made in the USA.</li>
-						<li>Full-zip.</li>
-						<li>Available in green with specks of blue and the white Google logo embroidered at left bicep.</li>
-					</ul>
+					<h2>Green Flex Fleece Zip Hoodie</h2>
+					<p class="highlight-txt textsize">&#36;45.65</p>
+				</div>
+				<div>
+					<select class="select-box">
+						<option>XS</option>
+						<option>S</option>
+						<option>M</option>
+						<option>L</option>
+						<option>XL</option>
+					</select>
+					<select class="select-box">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+				</div>
+
+				<div class="textsize">
+					<strong>
+						<p>Description</p>
+					</strong>
+
+					<p class="highlight-txt">Ultra soft. Ultra cozy. Our popular flex fleece hoodie now available in speckled green.</p>
+					<div class="highlight-txt">
+						<p>Features:</p>
+						<ul>
+							<li>50% cotton / 50% polyester.</li>
+							<li>Made in the USA.</li>
+							<li>Full-zip.</li>
+							<li>Available in green with specks of blue and the white Google logo embroidered at left bicep.</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<div class="shop-btn">
-			<a href="checkout.html" >ADD TO CART</a>
+			<div class="add-btn shop-btn">
+				<a href="checkout.html">ADD TO CART</a>
 			</div>
 
 		</div>
-	</div
+	</div>
+	<!--footer part-->
+	<div class="footer align-text-center display-none">
+		<a href="">
+			<h5>Made by Siddhant Shrivastava</h5>
+		</a>
+		<span>DEMO ONLY</span>
+	</div>
+</body>
+
+</html>
