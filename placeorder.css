@@ -1,0 +1,217 @@
+/*-----CSS for whole page-----*/
+
+body {
+    margin: 0;
+    font-family: 'Roboto', 'Noto', sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+.align-text-center {
+    text-align: center;
+}
+.cart-icon {
+    position: absolute;
+    width: 20px;
+    top: 20px;
+    right: 25px;
+}
+.heading {
+    padding-bottom: 30px; 
+}
+.heading a{
+    text-decoration: none;
+    color: black;
+}
+/*---page main heading SHOP---*/
+
+.main-heading {
+    font-size: medium;
+    font-weight: 800;
+    margin-top: 1.4em;
+}
+/*----full page container----*/
+
+.checkout-container {
+    display: block;
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 64px;
+    min-height: 100vh;
+}
+
+/*------main heading of page CHECKOUT------*/
+
+header {
+    text-align: center;
+}
+
+header>h1 {
+    margin: 0 0 4px 0;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+header>span {
+    color: #757575;
+    font-size: 12px;
+}
+
+.flex-layout {
+    margin-top: 40px;
+    display: flex;
+}
+
+.flex-layout>section {
+    flex: 1;
+    flex-basis: 0.1px;
+}
+.flex-layout> section:not(:first-child) {
+    margin-left: 80px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.row-input>* {
+    flex: 1;
+    flex-basis: 0.1px;
+}
+
+.order-input,
+.order-select {
+    font-size: 16px;
+}
+
+.order-select {
+    margin-bottom: 20px;
+}
+
+.order-input {
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.order-input>input {
+    font-size: 1em;
+    font-weight: 300;
+    color: #202020;
+    border: none;
+    padding: 8px 0;
+    width: 100%;
+    outline: none;
+}
+
+.order-input>.input-underliner {
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin: auto;
+    border-top: 1px solid #ccc;
+}
+
+.country-column {
+    display: flex;
+    ;
+    flex-direction: column;
+}
+
+.order-select>select {
+    width: 100%;
+    appearance: none;
+    padding: 8px 24px 8px 0;
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 1em;
+    font-weight: 300;
+    color: #202020;
+    overflow: hidden;
+    margin: 0;
+    outline: none;
+}
+
+.order-select>.input-underliner {
+    display: block;
+    border-bottom: 1px solid #ccc;
+    height: 1px;
+}
+
+.billing-checkbox {
+    margin: 28px 0;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox-parent {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    border: 2px solid #172C50;
+    border-radius: 2px;
+}
+
+h2 {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: bold;
+}
+.order-summary{
+    line-height: 24px;
+}
+.order-total{
+    margin: 30px 0px;
+}
+.internal-container{
+    margin: 0 auto;
+    padding: 0 24px 48px 24px;
+    max-width: 900px;
+    overflow: hidden;
+}
+/*------shop now button-------*/
+
+.shop-btn>a {
+    font-size: 15px;
+    padding: 10px 35px;
+    display: inline-block;
+    border: 2px solid black;
+    text-decoration: none;
+}
+
+.shop-btn>a:active {
+    background-color: black;
+    color: white;
+}
+@media (max-width:767px){
+    .flex-layout{
+        margin-top: 0px;
+        flex-direction: column;
+    }
+    .flex-layout> section:not(:first-child) {
+        margin-left: 0px;
+    }
+    .add-btn>a {
+        color: white;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 20px 0px;
+        border: none;
+        background-color: rgb(12, 12, 75);
+        text-align: center;
+        width: 100%;
+        font-size: 15px;
+    }
+}

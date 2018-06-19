@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="placeorder.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="checkout-container">
+        <div class="internal-container">
+            <div class="heading align-text-center">
+                <div>
+                    <h1>
+                        <a href="index.html" class="main-heading">S H O P</a>
+                    </h1>
+                    <a href="#">
+                        <img src="image/cart.svg" alt="cart" class="cart-icon">
+                    </a>
+                </div>
+            </div>
+            <form action="">
+                <header>
+                    <h1>Checkout</h1>
+                    <span>Shop is a demo app - form data will not be sent</span>
+                </header>
+                <div class="flex-layout">
+                    <section>
+                        <h2>Account Information</h2>
+                        <div class="row row-input">
+                            <div class="order-input ">
+                                <input type="email" name="account-email" id="account-email" placeholder="Email" autofocus>
+                                <div class="input-underliner"></div>
+                            </div>
+                        </div>
+                        <div class="row row-input">
+                            <div class="order-input ">
+                                <input type="tel" name="phone-number" id="phone-number" placeholder="Phone Number">
+                                <div class="input-underliner"></div>
+                            </div>
+                        </div>
+                        <h2>Shipping Address</h2>
+                        <div class="row row-input">
+                            <div class="order-input ">
+                                <input type="text" name="Address" id="Address" placeholder="Address">
+                                <div class="input-underliner"></div>
+                            </div>
+                        </div>
+                        <div class="row row-input">
+                            <div class="order-input ">
+                                <input type="text" name="ship-city" id="ship-city" placeholder="city">
+                                <div class="input-underliner"></div>
+                            </div>
+                        </div>
+                        <div class="row row-input">
+                            <div class="order-input ">
+                                <input type="text" name="state" id="state" placeholder="State/Province">
+                                <div class="input-underliner"></div>
+                            </div>
+                            <div class="order-input ">
+                                <input type="text" name="zip" id="zip" placeholder="Zip/Postal Code">
+                                <div class="input-underliner"></div>
+                            </div>
+                        </div>
+                        <div class="country-column">
+                            <label for="shipping-country">Country</label>
+                            <div class="order-select">
+                                <select name="shipping-country" id="shipping-country">
+                                    <option value="US">United States</option>
+                                    <option value="CANADA">CANADA</option>
+                                </select>
+                                <div class="input-underliner"></div>
+                            </div>
+                        </div>
+                        <h2>Billing Address</h2>
+                        <div class="billing-checkbox">
+                            <div class="checkbox-parent">
+                                <input type="checkbox">
+                            </div>
+                            <label for="checkbox">Use different billing address</label>
+                        </div>
+                        <div>
+                            <div class="row row-input">
+                                <div class="order-input ">
+                                    <input type="text" name="Address" id="Address" placeholder="Address">
+                                    <div class="input-underliner"></div>
+                                </div>
+                            </div>
+                            <div class="row row-input">
+                                <div class="order-input ">
+                                    <input type="text" name="ship-city" id="ship-city" placeholder="city">
+                                    <div class="input-underliner"></div>
+                                </div>
+                            </div>
+                            <div class="row row-input">
+                                <div class="order-input ">
+                                    <input type="text" name="state" id="state" placeholder="State/Province">
+                                    <div class="input-underliner"></div>
+                                </div>
+                                <div class="order-input ">
+                                    <input type="text" name="zip" id="zip" placeholder="Zip/Postal Code">
+                                    <div class="input-underliner"></div>
+                                </div>
+                            </div>
+                            <div class="country-column">
+                                <label for="shipping-country">Country</label>
+                                <div class="order-select">
+                                    <select name="shipping-country" id="shipping-country">
+                                        <option value="US">United States</option>
+                                        <option value="CANADA">CANADA</option>
+                                    </select>
+                                    <div class="input-underliner"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Payment Method</h2>
+                        <div class="row row-input">
+                            <div class="order-input ">
+                                <input type="text" name="name" id="name" placeholder="Cardholder Name">
+                                <div class="input-underliner"></div>
+                            </div>
+                        </div>
+                        <div class="row row-input">
+                            <div class="order-input ">
+                                <input type="number" name="cardnumber" id="cardnumber" placeholder="Card Number">
+                                <div class="input-underliner"></div>
+                            </div>
+                        </div>
+                        <label for="month">Expiry</label>
+                        <div class="row row-input">
+                            <div class="order-select">
+                                <select name="month" id="month">
+                                    <option value="january">Jan</option>
+                                    <option value="febuary">Feb</option>
+                                    <option value="march">Mar</option>
+                                    <option value="april">Apr</option>
+                                    <option value="may">May</option>
+                                    <option value="june">Jun</option>
+                                    <option value="july">Jul</option>
+                                    <option value="august">Aug</option>
+                                    <option value="september">Sep</option>
+                                    <option value="octomber">Oct</option>
+                                    <option value="november">Nov</option>
+                                    <option value="december">Dec</option>
+                                </select>
+                                <div class="input-underliner"></div>
+                            </div>
+                            <div class="order-select">
+                                <select name="year" id="year">
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                </select>
+                                <div class="input-underliner"></div>
+                            </div>
+                            <div class="order-input ">
+                                <input type="text" name="cvv" placeholder="CVV">
+                                <div class="input-underliner"></div>
+                            </div>
+                        </div>
+                        <h2>Order Summary</h2>
+                        <div class="row order-summary row-input">
+                            <div>Men's Tech Shell Full-Zip</div>
+                            <div>$251.00</div>
+                        </div>
+                        <div class="row order-summary row-input order-total">
+                            <div>Total</div>
+                            <div>$251.00</div>
+                        </div>
+                        <div class="shop-btn add-btn">
+                            <a href="#">PLACE ORDER</a>
+                        </div>
+                    </section>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
