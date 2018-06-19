@@ -4,61 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="common-style.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="checkout.css">
     <title>Document</title>
 </head>
 
 <body>
-    <!--header part with navbar-->
-    <div class="header align-text-center">
-        <div>
-            <h1>
-                <a href="index.html" class="main-heading">S H O P</a>
-            </h1>
-            <a href="#">
-                <img src="image/cart.svg" alt="cart" class="cart-icon">
+        <div class="heading align-text-center">
+                <div>
+                    <h1>
+                        <a href="index.html" class="main-heading">S H O P</a>
+                    </h1>
+                    <a href="#">
+                        <img src="image/cart.svg" alt="cart" class="cart-icon">
+                    </a>
+                </div>
+            </div>
+    <!--checkout page start-->
+    <div class="checkout-container">
+        <div class="main-container">
+            <section>
+                <div class="header">
+                    <h1>Your Cart</h1>
+                    <span>(1 item)</span>
+                </div>
+                <div class="list">
+                    <div class="flex-layout">
+
+                        <div>
+                            <img src="menstshirt/2.jpg" alt="" class="checkout-image" />
+                        </div>
+                        <div class="flex-details">
+                            <div class="name">
+                                <p class="text-wrapper">Men's Tech Shell Full-Zip</p>
+                            </div>
+                            <div class="detail">
+                                <div class="quantity">
+                                    <div class="qty-select">
+                                        <label prefix>Qty:</label>
+
+                                        <select name="">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                                <div class="size">
+                                    Size:
+                                    <span>M</span>
+                                </div>
+                                <div class="price">
+                                    $50.20
+                                </div>
+                                <img src="image/cross.png" alt="" class="cross-icon" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout-total-btn">
+                    Total:
+                    <span class="total">$50.20</span>
+                    <div class="checkout-btn">
+                        <a href="placeorder1.html">CHECKOUT</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--footer part-->
+        <div class="footer">
+            <a href="">
+                <h5>Made by Siddhant Shrivastava</h5>
             </a>
+            <span class="demo-label">DEMO ONLY</span>
         </div>
-    </div>
-    <div class="align-text-center checkout-top">
-        <h3>Your Cart</h3>
-        <h4 class="textsize highlight-txt">(1 item)</h4>
-    </div>
-
-    <div class="checkout-details">
-        <div>
-            <img src="menstshirt/2.jpg" class="checkout-img" alt="" />
-        </div>
-
-        <p class="text-wrapper textsize">Men's Tech Shell Full-Zip</p>
-
-        <div>
-            <span class="highlight-txt textsize">Qty:</span>
-            <select name="">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-        </div>
-        <div>
-            <h5 class="highlight-txt">Size:&emsp;M</h5>
-        </div>
-        <div>
-            <h5 class="highlight-txt">$50.20</h5>
-        </div>
-        <div>
-            <img src="image/cross.png" alt="" class="cross-icon" />
-        </div>
-
-    </div>
-    <div class="align-text-right">
-        <h5 class="highlight-txt">Total:</h5>
-        <h5 class="highlight-txt">$50.20</h5>
-        <div class="add-btn shop-btn"><a href="placeorder.html">CHECKOUT</a></div>
     </div>
 
 </body>
